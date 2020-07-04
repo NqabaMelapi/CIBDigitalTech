@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "HUVZCYzwa0cGOT/5WTI4kvDziI5V5KdH93cvEOn3A802J6FpbD5vm7r2I8jRN7TwNBD2Lomo7hXS+tN/gERP6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nqabam\\source\\repos\\CIBDigitalTech\\Core.CIBDigitalTech\\Core.CIBDigitalTech.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nqabam\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\nqabam\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
+    "C:\\Users\\nqabam\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512"
+  ],
+  "logs": []
+}

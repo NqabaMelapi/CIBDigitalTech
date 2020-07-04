@@ -1,0 +1,9 @@
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\bin\Debug\netcoreapp3.1\Core.CIBDigitalTech.deps.json
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\bin\Debug\netcoreapp3.1\Core.CIBDigitalTech.dll
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\bin\Debug\netcoreapp3.1\Core.CIBDigitalTech.pdb
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\obj\Debug\netcoreapp3.1\Core.CIBDigitalTech.csprojAssemblyReference.cache
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\obj\Debug\netcoreapp3.1\Core.CIBDigitalTech.AssemblyInfoInputs.cache
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\obj\Debug\netcoreapp3.1\Core.CIBDigitalTech.AssemblyInfo.cs
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\obj\Debug\netcoreapp3.1\Core.CIBDigitalTech.dll
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\obj\Debug\netcoreapp3.1\Core.CIBDigitalTech.pdb
+C:\Users\nqabam\source\repos\CIBDigitalTech\Core.CIBDigitalTech\obj\Debug\netcoreapp3.1\Core.CIBDigitalTech.csproj.CoreCompileInputs.cache
