@@ -19,4 +19,9 @@
     <ProjectReference Include="..\Core.CIBDigitalTech\Core.CIBDigitalTech.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Web\" />
+    <Folder Include="Web\PageObject\" />
+    <Folder Include="API\" />
+  </ItemGroup>
 </Project>

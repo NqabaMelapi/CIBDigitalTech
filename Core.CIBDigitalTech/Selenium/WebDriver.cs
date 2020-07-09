@@ -10,9 +10,9 @@ namespace Core.CIBDigitalTech.Selenium
 {
     public class WebDriver
     {
-        public RemoteWebDriver remoteWebDriver;
+        protected static RemoteWebDriver remoteWebDriver;
 
-        public void WaitForElementToBeEnabled(IWebElement element)
+        protected static void WaitForElementToBeEnabled(IWebElement element)
         {
             WebDriverWait wait = new WebDriverWait(remoteWebDriver, TimeSpan.FromSeconds(120));
 
@@ -24,7 +24,19 @@ namespace Core.CIBDigitalTech.Selenium
             wait.Until(CheckEnabled);
         }
 
-        public void OpenBrowser(string browser)
+        protected static void WaitForElementToBeDisplay(IWebElement element)
+        {
+            WebDriverWait wait = new WebDriverWait(remoteWebDriver, TimeSpan.FromSeconds(120));
+
+            Func<IWebDriver, bool> CheckDisplayed = new Func<IWebDriver, bool>((IWebDriver Web) =>
+            {
+                return element.Displayed;
+            });
+
+            wait.Until(CheckDisplayed);
+        }
+
+        public static void OpenBrowser(string browser)
         {
 
             switch (browser)
@@ -47,7 +59,19 @@ namespace Core.CIBDigitalTech.Selenium
             }
         }
 
-        public void CloseBrowser()
+        public static void NavigateToUrl(string url)
+        {
+            try
+            {
+                remoteWebDriver.Navigate().GoToUrl(url);
+            }
+            catch (Exception e)
+            {
+                string erroMessage = e.Message;
+            }
+        }
+
+        public static void CloseBrowser()
         {
             try
             {
@@ -59,7 +83,7 @@ namespace Core.CIBDigitalTech.Selenium
             }
         }
 
-        public void Click(IWebElement element)
+        protected static void Click(IWebElement element)
         {
 
             try
@@ -70,11 +94,11 @@ namespace Core.CIBDigitalTech.Selenium
             catch (Exception e)
             {
                 string erroMessage = e.Message;
-            }            
+            }
         }
 
 
-        public void EnterText(IWebElement element, string value)
+        protected static void EnterText(IWebElement element, string value)
         {
             try
             {
@@ -87,33 +111,62 @@ namespace Core.CIBDigitalTech.Selenium
             }
         }
 
-        public void SelectDropdownByIndex()
+        protected static void SelectDropdownByIndex(IWebElement element, int index)
+        {
+            try
+            {
+                SelectElement select = new SelectElement(element);
+                select.SelectByIndex(index);
+            }
+            catch (Exception e)
+            {
+                string erroMessage = e.Message;
+            }
+        }
+
+        protected static void SelectDropdownByValue(IWebElement element, string value)
+        {
+            try
+            {
+                SelectElement select = new SelectElement(element);
+                select.SelectByValue(value);
+            }
+            catch (Exception e)
+            {
+                string erroMessage = e.Message;
+            }
+        }
+
+        protected static void SelectDropdownByText(IWebElement element, string text)
+        {
+            try
+            {
+                SelectElement select = new SelectElement(element);
+                select.SelectByText(text);
+            }
+            catch (Exception e)
+            {
+                string erroMessage = e.Message;
+            }
+        }
+
+
+        protected void ClickBrowserBackButton()
         {
 
         }
 
-        public void SelectDropdownByValue()
+        protected void ClickBrowserForwarButton()
         {
 
         }
 
-
-        public void ClickBrowserBackButton()
+        protected void GoToNextTab()
         {
 
         }
 
-        public void ClickBrowserForwarButton()
-        {
-
-        }
-
-        public void GoToNextTab()
-        {
-
-        }
-
-        public void GoToPreviousTab()
+        protected void GoToPreviousTab()
         {
 
         }
