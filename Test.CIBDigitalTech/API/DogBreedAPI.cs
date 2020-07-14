@@ -6,11 +6,11 @@ using Core.CIBDigitalTech.API.Utilities;
 
 namespace Test.CIBDigitalTech.API
 {
+    [Category("API")]
     public class DogBreedAPI
     {
 
         [Test]
-        [Category("API")]
         public void GetAllDogBreeds()
         {
 
@@ -23,7 +23,6 @@ namespace Test.CIBDigitalTech.API
         }
 
         [Test]
-        [Category("API")]
         public void GetRetrieverSubBreeds()
         {
 
@@ -32,7 +31,6 @@ namespace Test.CIBDigitalTech.API
         }
 
         [Test]
-        [Category("API")]
         public void GetGoldenSubBreedRandomImage()
         {
             var results = Task.Run(async () => await Method.Get("https://dog.ceo/api/breed/golden/images/random")).Result;
