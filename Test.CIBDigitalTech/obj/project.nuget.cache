@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UEL1qY7SUCtHVITlXutMxz+aInHbjo8NP0qCzjvkCbFANiVgBkrzchMFV7Y3K1844TglFNtEMDHbrRlG+80B8w==",
+  "dgSpecHash": "AodUupiCxJid++AoUeSeWZYdFgegMzfqWocTfRWYEFaATQAvqzYiLmUOgbSNNsQSapzx3r2ONIgXCj5NMHScLA==",
   "success": true,
   "projectFilePath": "/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/Test.CIBDigitalTech.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "/Users/nqaba/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/nqaba/.nuget/packages/nuget.frameworks/5.0.0/nuget.frameworks.5.0.0.nupkg.sha512",
     "/Users/nqaba/.nuget/packages/nunit/3.12.0/nunit.3.12.0.nupkg.sha512",
+    "/Users/nqaba/.nuget/packages/nunit.consolerunner/3.11.1/nunit.consolerunner.3.11.1.nupkg.sha512",
     "/Users/nqaba/.nuget/packages/nunit3testadapter/3.16.1/nunit3testadapter.3.16.1.nupkg.sha512",
     "/Users/nqaba/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/Users/nqaba/.nuget/packages/runtime.native.system.security.cryptography/4.0.0/runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",

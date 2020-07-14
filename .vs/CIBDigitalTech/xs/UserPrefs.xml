@@ -1,17 +1,22 @@
 ﻿<Properties StartupConfiguration="{52E326C3-3445-4515-BD9F-69166B08F29E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core.CIBDigitalTech/Core.CIBDigitalTech.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test.CIBDigitalTech/API/DogBreedAPI.cs">
     <Files>
       <File FileName="Core.CIBDigitalTech/Repository/UserRepository.cs" Line="19" Column="10" />
       <File FileName="Test.CIBDigitalTech/ReportPortal.config.json" />
       <File FileName="Test.CIBDigitalTech/Web/UserListTest.cs" />
-      <File FileName="Core.CIBDigitalTech/Selenium/WebDriver.cs" Line="45" Column="1" />
-      <File FileName="Core.CIBDigitalTech/Core.CIBDigitalTech.csproj" Line="1" Column="1" />
+      <File FileName="Core.CIBDigitalTech/Selenium/WebDriver.cs" />
+      <File FileName="Core.CIBDigitalTech/Core.CIBDigitalTech.csproj" />
+      <File FileName="Test.CIBDigitalTech/API/DogBreedAPI.cs" Line="7" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CIBDigitalTech" expanded="True">
-            <Node name="Core.CIBDigitalTech" expanded="True" selected="True" />
+            <Node name="Test.CIBDigitalTech" expanded="True">
+              <Node name="API" expanded="True">
+                <Node name="DogBreedAPI.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
