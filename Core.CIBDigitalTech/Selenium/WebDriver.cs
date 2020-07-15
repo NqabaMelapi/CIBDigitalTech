@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,6 +12,7 @@ namespace Core.CIBDigitalTech.Selenium
     public class WebDriver
     {
         protected static RemoteWebDriver remoteWebDriver;
+        //protected static IWebDriver remoteWebDriver;
 
         protected static void WaitForElementToBeEnabled(IWebElement element)
         {
@@ -43,6 +45,7 @@ namespace Core.CIBDigitalTech.Selenium
             {
                 case "Chrome":
                     remoteWebDriver = new RemoteWebDriver(new Uri("http://52.136.122.242:4444/wd/hub"), DesiredCapabilities.ChromeDesiredCapabilities().ToCapabilities(), TimeSpan.FromSeconds(300));
+                    //remoteWebDriver = new ChromeDriver("/Users/nqaba/Downloads/SeleniumDriver");
                     break;
 
                 case "Firefox":
@@ -103,6 +106,7 @@ namespace Core.CIBDigitalTech.Selenium
             try
             {
                 WaitForElementToBeEnabled(element);
+                element.Clear();
                 element.SendKeys(value);
             }
             catch (Exception e)

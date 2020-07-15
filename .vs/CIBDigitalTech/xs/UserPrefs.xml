@@ -1,20 +1,44 @@
 ﻿<Properties StartupConfiguration="{52E326C3-3445-4515-BD9F-69166B08F29E}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Test.CIBDigitalTech/API/DogBreedAPI.cs">
     <Files>
-      <File FileName="Core.CIBDigitalTech/Repository/UserRepository.cs" Line="19" Column="10" />
-      <File FileName="Test.CIBDigitalTech/ReportPortal.config.json" />
-      <File FileName="Test.CIBDigitalTech/Web/UserListTest.cs" />
-      <File FileName="Core.CIBDigitalTech/Selenium/WebDriver.cs" />
+      <File FileName="Core.CIBDigitalTech/Repository/UserRepository.cs" Line="42" Column="14" />
+      <File FileName="Test.CIBDigitalTech/Web/UserListTest.cs" Line="72" Column="17" />
+      <File FileName="Core.CIBDigitalTech/Selenium/WebDriver.cs" Line="177" Column="6" />
       <File FileName="Core.CIBDigitalTech/Core.CIBDigitalTech.csproj" />
-      <File FileName="Test.CIBDigitalTech/API/DogBreedAPI.cs" Line="7" Column="11" />
+      <File FileName="Test.CIBDigitalTech/API/DogBreedAPI.cs" Line="1" Column="1" />
+      <File FileName="Test.CIBDigitalTech/Web/PageObject/UserTable.cs" Line="81" Column="1" />
+      <File FileName="Core.CIBDigitalTech/DBContext/CIBDigitalTechContext.cs" />
+      <File FileName="Core.CIBDigitalTech/Model/User.cs" />
+      <File FileName="Core.CIBDigitalTech/Model/UserTestData.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CIBDigitalTech" expanded="True">
+            <Node name="Core.CIBDigitalTech" expanded="True">
+              <Node name="API" expanded="True" />
+              <Node name="DBContext" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Selenium" expanded="True" />
+            </Node>
             <Node name="Test.CIBDigitalTech" expanded="True">
               <Node name="API" expanded="True">
                 <Node name="DogBreedAPI.cs" selected="True" />
+              </Node>
+              <Node name="Web" expanded="True">
+                <Node name="PageObject" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="CIBDigitalTech" expanded="True">
+            <Node name="Test.CIBDigitalTech" expanded="True">
+              <Node name="Test.CIBDigitalTech.Web" expanded="True">
+                <Node name="UserListTest" expanded="True" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,8 +51,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Core.CIBDigitalTech/Selenium/WebDriver.cs" relfile="Core.CIBDigitalTech/Selenium/WebDriver.cs" line="40" column="1" />
-      <Breakpoint enabled="false" file="/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/API/DogBreedAPI.cs" relfile="Test.CIBDigitalTech/API/DogBreedAPI.cs" line="35" column="1" />
+      <Breakpoint enabled="false" file="/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/API/DogBreedAPI.cs" relfile="Test.CIBDigitalTech/API/DogBreedAPI.cs" line="36" column="1" />
+      <Breakpoint file="/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/Web/PageObject/UserTable.cs" relfile="Test.CIBDigitalTech/Web/PageObject/UserTable.cs" line="54" column="1" />
+      <Breakpoint file="/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/Web/PageObject/UserTable.cs" relfile="Test.CIBDigitalTech/Web/PageObject/UserTable.cs" line="52" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

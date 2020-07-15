@@ -1,6 +1,9 @@
 ﻿using System;
 using OpenQA.Selenium;
 using Core.CIBDigitalTech.Selenium;
+using System.Collections;
+using System.Collections.Generic;
+using Core.CIBDigitalTech.Model;
 
 namespace Test.CIBDigitalTech.Web.PageObject
 {
@@ -10,8 +13,8 @@ namespace Test.CIBDigitalTech.Web.PageObject
         {
         }
 
-        static IWebElement userTable => remoteWebDriver.FindElement(By.ClassName("smart-table table table-striped"));
-        static IWebElement addUser => remoteWebDriver.FindElement(By.ClassName("btn btn-link pull-right"));
+        static IWebElement userTable => remoteWebDriver.FindElement(By.XPath("/html/body/table/tbody"));
+        static IWebElement addUser => remoteWebDriver.FindElement(By.XPath("/html/body/table/thead/tr[2]/td/button"));
         static IWebElement firstName => remoteWebDriver.FindElement(By.Name("FirstName"));
         static IWebElement lasttName => remoteWebDriver.FindElement(By.Name("LastName"));
         static IWebElement userName => remoteWebDriver.FindElement(By.Name("UserName"));
@@ -26,38 +29,82 @@ namespace Test.CIBDigitalTech.Web.PageObject
 
         public static bool ValidateUserTableExist()
         {
+
             WaitForElementToBeDisplay(userTable);
             return userTable.Displayed;
         }
 
-        public static bool CheckIfUserIsOnTheList()
+        public static bool CheckIfUserIsAddedOnTheList(IList<UserTestData> userTestData)
         {
-            return true;
+            ValidateUserTableExist();
+
+
+
+            IList<IWebElement> userList = userTable.FindElements(By.TagName("tr"));
+            IList<IWebElement> userData;
+
+            int checkCount = 0;
+            bool userExists = false;
+
+            foreach (UserTestData expectedData in userTestData )
+            {
+                foreach (IWebElement row in userList)
+                {
+                    userData = row.FindElements(By.TagName("td"));
+
+                    string firstName = userData[0].Text;
+                    string lasttName = userData[1].Text;
+                    string userName = userData[2].Text;
+                    string customerName = userData[4].Text;
+                    string role = userData[5].Text;
+                    string email = userData[6].Text;
+                    string cellPhone = userData[7].Text;
+
+                    if (userName == expectedData.UserName)
+                    {
+
+                        checkCount++;
+                        if (checkCount == userTestData.Count)
+                        {
+                            userExists = true;
+                            break;
+                        }
+
+                        break;
+                    }
+                }
+            }
+
+
+
+            return userExists;
         }
 
         public static void SelectCompany(string company)
         {
-            if (company.Equals("companyAAA"))
+            if (company.Equals("CompanyAAA"))
                 companyAAA.Click();
-            else if (company.Equals("companyBBB"))
+            else if (company.Equals("CompanyBBB"))
                 companyBBB.Click();
         }
 
-        public static void AddUser()
+        public static void AddUser(IList<UserTestData> userTestData)
         {
-            Click(addUser);
-            EnterText(firstName, "FName1");
-            EnterText(lasttName, "LName1");
-            EnterText(userName, "User1");
-            EnterText(password, "Pass1");
-            SelectCompany("companyAAA");
-            SelectDropdownByValue(roleDropDown, "Admin");
-            EnterText(email, "");
-            EnterText(cellPhone, "");
-            Click(saveBtn);
-            
-        }
 
+            foreach (UserTestData data in userTestData)
+            {
+                Click(addUser);
+                EnterText(firstName, data.FirstName);
+                EnterText(lasttName, data.LastName);
+                EnterText(userName, data.UserName);
+                EnterText(password, data.Password);
+                SelectCompany(data.Customer);
+                SelectDropdownByText(roleDropDown, data.Role);
+                EnterText(email, data.Email);
+                EnterText(cellPhone, data.CellPhone);
+                Click(saveBtn);
+            }
+        }
 
     }
 }

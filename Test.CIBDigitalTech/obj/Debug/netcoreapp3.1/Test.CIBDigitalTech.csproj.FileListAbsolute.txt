@@ -98,6 +98,10 @@ C:/Users/nqabam/source/repos/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcor
 C:/Users/nqabam/source/repos/CIBDigitalTech/Test.CIBDigitalTech/bin/Debug/netcoreapp3.1/WebDriver.dll
 C:/Users/nqabam/source/repos/CIBDigitalTech/Test.CIBDigitalTech/bin/Debug/netcoreapp3.1/WebDriver.Support.dll
 C:/Users/nqabam/source/repos/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.csproj.CoreCompileInputs.cache
+/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.csprojAssemblyReference.cache
+/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.AssemblyInfoInputs.cache
+/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.AssemblyInfo.cs
+/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.csproj.CoreCompileInputs.cache
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.dll
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.pdb
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/bin/Debug/netcoreapp3.1/nunit.engine.dll
@@ -228,10 +232,6 @@ C:/Users/nqabam/source/repos/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcor
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/bin/Debug/netcoreapp3.1/Core.CIBDigitalTech.dll
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/bin/Debug/netcoreapp3.1/Core.CIBDigitalTech.pdb
-/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.csprojAssemblyReference.cache
-/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.AssemblyInfoInputs.cache
-/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.AssemblyInfo.cs
-/Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.csproj.CoreCompileInputs.cache
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.csproj.CopyComplete
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.dll
 /Users/nqaba/Downloads/NqabaMelapi/CIBDigitalTech/Test.CIBDigitalTech/obj/Debug/netcoreapp3.1/Test.CIBDigitalTech.pdb
