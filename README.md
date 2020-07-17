@@ -25,7 +25,7 @@ username: guest
 
 password: password!@#$
 
-1. Goto [link](http://52.136.122.242:8111/viewType.html?buildTypeId=Build_CIBDigitalTech) and login in using username and password.
+1. Goto [Teamcity](http://52.136.122.242:8111/viewType.html?buildTypeId=Build_CIBDigitalTech) and login in using username and password.
 2. Click on "run" button to click off a run.
 
 
@@ -49,11 +49,17 @@ dotnet build
 ### Monitoring Test Run
 
 This framework uses Zalenium Live Preview to monitor running tests.
-* Go to [link](http://52.136.122.242:4444/grid/admin/live) to monitor test runs. Don't forget to refresh the page between runs.
-* Test logs and video recoding can be found [here](http://52.136.122.242:4444/dashboard/), latest test are on top of the list.
+* Go to [Zalenium Live Preview](http://52.136.122.242:4444/grid/admin/live) to monitor test runs. Don't forget to refresh the page between runs.
+* Test logs and video recoding can be found [Zalenium Dashboard](http://52.136.122.242:4444/dashboard/), latest test are on top of the list.
 
 ### Test Results
 Test results can be found on Teamcity under Tests tab.
 
 
+Note:
+The following links may not work if you're accessing them connected to a VPN, you must disconect from your VPN.
+
+* [Teamcity](http://52.136.122.242:8111/viewType.html?buildTypeId=Build_CIBDigitalTech)
+* [Zalenium Live Preview](http://52.136.122.242:4444/grid/admin/live)
+* [Zalenium Dashboard](http://52.136.122.242:4444/dashboard/)
 
